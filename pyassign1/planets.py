@@ -43,9 +43,9 @@ def main():
         a.forward(Count)
         Count+=30
         a.down()
-        a.speed(99)
-    BigInt = 10000
-    for i in range(BigInt):
+        a.speed(0)
+    BigInt = 100
+    for i in range(BigInt*2):
         Cosine = math.cos(math.pi/BigInt*(i+1))
         Sine = math.sin(math.pi/BigInt*(i+1))
         c1 = 50
