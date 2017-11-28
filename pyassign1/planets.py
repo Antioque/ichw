@@ -17,35 +17,30 @@ def main():
     Sun.shape("circle")
     Mercury = turtle.Turtle()
     Mercury.color("blue")
-    Mercury.shape("circle")
     Venus = turtle.Turtle()
     Venus.color("brown")
-    Venus.shape("circle")
     Earth = turtle.Turtle()
     Earth.color("blue")
-    Earth.shape("circle")
     Mars = turtle.Turtle()
     Mars.color("red")
-    Mars.shape("circle")
     Jupiter = turtle.Turtle()
     Jupiter.color("green")
-    Jupiter.shape("circle")
     Saturn = turtle.Turtle()
-    Saturn.color("red")
-    Saturn.shape("circle")
+    Saturn.color("white")
     Sun.shapesize(2)
     Sun.stamp()
     Count = 50
     for a in [Mercury,Venus,Earth,Mars,Jupiter,Saturn]:
         a.shapesize(1)
+        a.shape("circle")
         a.pensize(5)
         a.up()
         a.forward(Count)
         Count+=30
         a.down()
         a.speed(0)
-    BigInt = 100
-    for i in range(BigInt*2):
+    BigInt = 1000
+    for i in range(BigInt):
         Cosine = math.cos(math.pi/BigInt*(i+1))
         Sine = math.sin(math.pi/BigInt*(i+1))
         c1 = 50
